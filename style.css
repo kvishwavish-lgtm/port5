@@ -138,3 +138,13 @@ img{
     background-color: #1d4ed8;
     transform: translateX(-1px);
 }
+label{
+    width: 30%;
+}
+progress{
+    padding: 15px;
+}
+progress{
+    padding: 25px;
+    width: 300px;
+}
