@@ -1,137 +1,150 @@
-nav,li,ul{
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color:#ff3300;
+
+    font-size: 28px;
+    width: 100%;
     display: flex;
-}
-ul{
-    gap: 60px;
-    margin-left: 30%;
-    text-decoration: none;
-}
-li{
-    text-decoration: none;
-}
-.na{
-    margin-left: 10%;
-    background-color: blue;
+    align-items: center;
+    justify-content: space-around;
     color: white;
-    width: 90px;
-    height: 50px;
 }
-.black{
-    color: black;
+nav li{
+    display: inline;
+    gap: 30px;
+    margin: 0 8px;
 
 }
-.blue{
-    color: blue;
+nav div{
+    font-size: 36px;
+    font-weight: bolder;
 }
-h4{
-    font-size: 25px;
-    margin-top: 12px;
-    margin-left: 1.5%;
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.menu-line{
+    height: 5px;
+    width: 30px ;
+    background-color: blue;
+    margin: 5px 0;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+button{
+  
+    border-radius: 15px;
+    background-color: #ff3300 ;
+    padding: 20px;
+    color: white;
+    box-shadow: 5px 5px 15px orangered;
+    border: none;
+    
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+}
+  
+
+img{
+    width: 350px;
+   margin-top: 50px;
+    border-radius: 1000px;
+    box-shadow: 5px 5px 5px 5px orangered;
 }
 .hero{
-    margin-top: 100px;
-    margin-left: 2%;
+    display: flex;
+    margin-right: 20%;
 }
-.bblack{
-    color: blue;
+.card{
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 15px orangered;
+    justify-content: space-around;
+    color: orangered;
+    height: 150px;
+    transition:  0.3s ease;
 }
-.bblue{
-    color:black;
+i{
+ font-size: 100px;
 }
-h1{
-    font-size: 80px;
+.socket{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.pro{
-    width:190px ;
-    height: 40px;
-    border-radius: 20px;
-    background-color: blue;
-    color: white;
-    border-color: #0056b3;
-    transition: 0.3s;
 
+.card h4{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
 }
-.pro:hover{
-    background-color: #0056b3
-}
-body{
-    background-size: cover;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-body{
-    font-family:'Poppins',sans-serif;
-}
-nav{
-    position: sticky;
-}
-.resume{
-    display: inline-block;
-    padding: 12px 15px;
-    background-color: blue;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    transition:0.3s;
-    position: absolute;
-    left: 800px;
-    top: 550px;
-}
-.resume:hover{
-    background: #0056b3;
-}
-.iim{
-    display:flex ;
-    width: 300px;
-    gap: 500px;
+.card:hover{
+    margin-top: -10px;
     
 }
-img{
-    width: 300px;
+@media screen and (max-width:640px){
+    nav  {
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul {
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    nav div{
+        align-self: flex-start;
+        margin: 10px 0 0 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+    }
+    .showmenu{
+        display: block;
+    }
+    .hero{
+     display: block;
+    }
+    .ap{
+        display: block;
+        width: 100%;
+    }
+    img{
+        width: 250px;
+        border-radius: 1000px;
+        padding: 0;
+        box-shadow: 5px 5px 5px 5px orangered;
+        margin-top: 90px;
+        margin-left: 80px;
+    
+    }
+  .socket{
+    display: flex;
     justify-content: space-around;
-}
-.img2{
-    margin-left: 200px;
-}
-.ull{
-    display: block;
-    list-style-type: disc;
-    margin-left: 0%;
-}
-.ull li{
-    padding: 20px;
-}
-.btn-resume {
-  display: inline-block;
-  padding: 10px 24px;
-  background-color: #2563eb;   /* blue */
-  color: #ffffff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  transition: 0.3s;
-}
 
+  }
+  .card{
+    margin-top: 15px;
+    width: 100px;
+    margin-right: 20px;
+  }
 
-
-.btn-resume:hover {
-  background-color: #1d4ed8;   /* darker blue */
-  transform: translateY(-1px);
-}
-.proj{
-    display: inline-block;
-    padding: 10px 24px;
-    background-color: #2563eb;
-    color: #ffffff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: 0.3sc;
-    margin-left: 50px;
-} 
-.proj:hover{
-    background-color: #1d4ed8;
-    transform: translateX(-1px);
+    
 }
