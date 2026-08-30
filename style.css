@@ -140,6 +140,9 @@ i{
     justify-content: space-around;
     gap: 30px;
   }
+  .card{
+    margin-top: 11px;
+  }
 
     
 }
