@@ -45,6 +45,8 @@ button{
     background-color: #ff3300 ;
     padding: 20px;
     color: white;
+    box-shadow: 5px 5px 15px orangered;
+    border: none;
     
 a{
     text-decoration: none;
@@ -63,7 +65,34 @@ img{
     display: flex;
     margin-right: 20%;
 }
+.card{
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 15px orangered;
+    justify-content: space-around;
+    color: orangered;
+    height: 150px;
+    transition:  0.3s ease;
+}
+i{
+ font-size: 100px;
+}
+.socket{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.card h4{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+}
+.card:hover{
+    margin-top: -10px;
+    
+}
 @media screen and (max-width:640px){
     nav  {
         flex-direction: column;
@@ -106,5 +135,11 @@ img{
         margin-left: 80px;
     
     }
+  .socket{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
     
 }
