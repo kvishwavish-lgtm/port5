@@ -93,6 +93,28 @@ i{
     margin-top: -10px;
     
 }
+hr{
+    margin-top: 30px;
+}
+h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 30px;
+}
+.procard{
+    display: flex;
+}
+.card2{
+    width: 40%;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 5px 5px 5px 5px orangered;
+    justify-content: space-between;
+    margin: 30px;
+}
 @media screen and (max-width:700px){
     nav  {
         flex-direction: column;
